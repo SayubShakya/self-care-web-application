@@ -1,45 +1,84 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // If you need links in the footer
-import './Footer.css';  // Make sure to create this CSS file
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
+          {/* About Section */}
           <div className="footer-section about">
             <h2>About Us</h2>
-            <p>Your self-care destination.  We provide resources and inspiration to help you nurture your mind, body, and soul.</p>
+            <p>
+              We provide resources and inspiration to help you nurture your
+              mind, body, and soul. Start your journey to a happier, healthier
+              you today!
+            </p>
+
             <div className="contact-details">
-              <p>Email: info@selfcareapp.com</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>
+                Email:{" "}
+                <a href="mailto:WeVibe@selfcareapp.com">
+                  WeVibe@selfcarewebapp.com
+                </a>
+              </p>
+              <p>
+                Phone: <a href="tel:+1234567890">(+977) 9898878766</a>
+              </p>
             </div>
           </div>
 
+          {/* Quick Links */}
           <div className="footer-section links">
             <h2>Quick Links</h2>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/shop">Shop</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/TimeTracker">Time Tracker</Link>
+              </li>
+              <li>
+                <Link to="/MoodTracker">Mood Tracker</Link>
+              </li>
+              <li>
+                <Link to="/Tips">Tips</Link>
+              </li>
             </ul>
           </div>
 
+          {/* Social Media */}
           <div className="footer-section social">
             <h2>Follow Us</h2>
             <div className="social-links">
-              <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <FaFacebookF />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <FaTwitter />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
             </div>
           </div>
         </div>
 
+        {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Self-Care App. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Self-Care App. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
