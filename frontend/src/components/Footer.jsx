@@ -77,7 +77,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} Self-Care App. All rights reserved.
+            © {new Date().getFullYear()} WeVibe. All rights reserved for self-care hackathon.
           </p>
         </div>
       </div>
