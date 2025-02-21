@@ -1,0 +1,52 @@
+/* src/components/Navbar.css */
+
+/* Overall Navbar Styles */
+.navbar {
+    background-color: rgb(17, 150, 39); /* Changed to skyblue */
+    color: rgb(169, 20, 20);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles for the Login Button */
+  .login-button {
+    background-color: red; /* Changed to red */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold; /* Made text bold */
+    text-decoration: none; /* Remove underline if it's a link */
+    display: inline-block; /* Make sure it behaves like a button */
+  }
+  
+  .login-button:hover {
+    background-color: darkred; /* Darker red on hover for feedback */
+  }

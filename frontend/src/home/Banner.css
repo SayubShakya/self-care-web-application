@@ -1,0 +1,38 @@
+.banner {
+    background: linear-gradient(to right, #f0f8ff, #e6f0ff); /* Soft, calming background */
+    padding: 100px 20px;
+    text-align: center;
+    color: #333; /* Darker text for readability */
+  }
+  
+  .banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .banner p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #4caf50; /* A positive, inviting color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #3e8e41;
+  }

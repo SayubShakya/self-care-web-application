@@ -1,6 +1,8 @@
+// src/components/NavItems.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo/logo.png";
+import './Navbar.css'; // Make sure the CSS is imported
 
 const NavItems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -28,7 +30,10 @@ const NavItems = () => {
             <Link to="/signup" className="lab-btn me-3">
               <span>Create Account</span>
             </Link>
-            <Link to="/login">Login</Link>
+            {/* Apply the login-button class to the Login Link */}
+            <Link to="/login" className="login-button">
+              Log In
+            </Link>
           </div>
         </div>
       </div>
@@ -39,7 +44,7 @@ const NavItems = () => {
             {/* Logo */}
             <div className="logo-search-acte">
               <Link to="/">
-              <img src={logo} alt="Logo" style={{ width: "120px", height: "auto" }} />
+                <img src={logo} alt="Logo" style={{ width: "120px", height: "auto" }} />
               </Link>
             </div>
 
@@ -70,7 +75,8 @@ const NavItems = () => {
                 Create Account
               </Link>
 
-              <Link to="/login" className="d-none d-md-block">
+              {/* Apply the login-button class to the Login Link */}
+              <Link to="/login" className="login-button d-none d-md-block">
                 Log In
               </Link>
 
