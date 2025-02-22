@@ -9,11 +9,14 @@ import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation(); // Get current route
-  const hideNavbarRoutes = ["/login", "/signup"]; // Routes without Navbar
-  const hideFooterRoutes = ["/signup", "/login"]; // Routes without Footer
+
+  // Routes where Navbar and Footer should be hidden
+  const hideNavbarRoutes = ["/login", "/Signup", "/NavItems"];
+  const hideFooterRoutes = ["/login", "/Signup"];
 
   return (
     <>
+      {/* Hide Navbar on login and signup pages */}
       {!hideNavbarRoutes.includes(location.pathname) && <NavItems />}
 
       <Routes>
@@ -23,6 +26,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
       </Routes>
 
+      {/* Hide Footer on login and signup pages */}
       {!hideFooterRoutes.includes(location.pathname) && <Footer />}
     </>
   );

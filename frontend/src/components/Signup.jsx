@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Auth.css"; // Styles for Auth components
 
 const Signup = () => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
-  const [type, setType] = useState(""); // User type (e.g., Student, Working Professional, etc.)
+  const [type, setType] = useState(""); 
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [password, setPassword] = useState("");

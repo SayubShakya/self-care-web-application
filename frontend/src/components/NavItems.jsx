@@ -60,13 +60,13 @@ const NavItems = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/TimeTracker">Time Tracker</Link>
+                    <Link to="/#">Time Tracker</Link>
                   </li>
                   <li>
-                    <Link to="/MoodTracker">Mood Tracker</Link>
+                    <Link to="/#">Mood Tracker</Link>
                   </li>
                   <li>
-                    <Link to="/Tips">Tips</Link>
+                    <Link to="/#">Tips</Link>
                   </li>
                 </ul>
               </div>

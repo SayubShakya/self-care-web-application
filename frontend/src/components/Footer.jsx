@@ -25,9 +25,7 @@ const Footer = () => {
             <div className="contact-details">
               <p>
                 Email:{" "}
-                <a href="mailto:WeVibe@selfcareapp.com">
-                  WeVibe@selfcare.com
-                </a>
+                <a href="mailto:WeVibe@selfcareapp.com">WeVibe@selfcare.com</a>
               </p>
               <p>
                 Phone: <a href="tel:+1234567890">(+977) 9898878766</a>
@@ -36,17 +34,23 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="footer-section links">
+          <div className="footer-section links" style={{ color: "white" }}>
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <Link to="/#">Time Tracker</Link>
+                <Link to="/#" style={{ color: "#ccc", textDecoration: "none" }}>
+                  Time Tracker
+                </Link>
               </li>
               <li>
-                <Link to="/#">Mood Tracker</Link>
+                <Link to="/#" style={{ color: "#ccc", textDecoration: "none" }}>
+                  Mood Tracker
+                </Link>
               </li>
               <li>
-                <Link to="/#">Tips</Link>
+                <Link to="/#" style={{ color: "#ccc", textDecoration: "none" }}>
+                  Tips
+                </Link>
               </li>
             </ul>
           </div>
@@ -74,7 +78,8 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} WeVibe. All rights reserved for self-care hackathon.
+            © {new Date().getFullYear()} WeVibe. All rights reserved for
+            self-care hackathon.
           </p>
         </div>
       </div>
