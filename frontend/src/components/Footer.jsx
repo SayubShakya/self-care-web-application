@@ -26,7 +26,7 @@ const Footer = () => {
               <p>
                 Email:{" "}
                 <a href="mailto:WeVibe@selfcareapp.com">
-                  WeVibe@selfcarewebapp.com
+                  WeVibe@selfcare.com
                 </a>
               </p>
               <p>
@@ -39,9 +39,6 @@ const Footer = () => {
           <div className="footer-section links">
             <h2>Quick Links</h2>
             <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
               <li>
                 <Link to="/TimeTracker">Time Tracker</Link>
               </li>
