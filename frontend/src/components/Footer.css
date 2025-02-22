@@ -26,6 +26,12 @@
   position: relative;
 }
 
+.footer-section links{
+  display: flex;
+  gap: 10px;
+  color: #ccc;
+}
+
 .footer-section h2::after {
   content: "";
   display: block;
@@ -88,11 +94,10 @@
 
 /* Footer Bottom */
 .footer-bottom {
+  background: #222;
   margin-top: 40px;
-  border-top: 1px solid #840d0d;
   padding-top: 20px;
   font-size: 0.9em;
-  color: #aaa;
 }
 
 .footer-bottom p {
@@ -107,6 +112,7 @@
 
 .footer-bottom a:hover {
   text-decoration: underline;
+  background-color: #787777;
 }
 
 .footer-section links{
