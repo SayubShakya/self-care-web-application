@@ -1,37 +1,40 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './HomeCategory.css'; // Link to the CSS file
 
 const HomeCategory = () => {
+  const navigate = useNavigate(); // Initialize navigate function
+
   const categories = [
     {
       title: 'Mindfulness & Meditation',
       description: 'Find calm and focus with guided meditations and mindfulness exercises.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcH0_TVzDs8hCswIYDncFL3ZsbBO3g8v0GCw&s', // REPLACE ME
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcH0_TVzDs8hCswIYDncFL3ZsbBO3g8v0GCw&s',
     },
     {
       title: 'Healthy Eating',
       description: 'Explore delicious, wholesome recipes to nourish your body.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR0m-_QXV2pb8jWVLX1diyfKi5csq51RQGmQ&s', // REPLACE ME
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR0m-_QXV2pb8jWVLX1diyfKi5csq51RQGmQ&s',
     },
     {
       title: 'Physical Activity',
       description: 'Stay active and energized with fun, engaging workouts.',
-      image: 'https://www.volunteerworldnepal.org/wp-content/uploads/2021/12/sports-and-physical-education.jpg', // REPLACE ME
+      image: 'https://www.volunteerworldnepal.org/wp-content/uploads/2021/12/sports-and-physical-education.jpg',
     },
     {
       title: 'Rest & Relaxation',
       description: 'Unwind and recharge with techniques for better sleep and relaxation.',
-      image: 'https://ivhq.imgix.net/images/addons/international-volunteer-hq-tour-travel-add-on-nepal-hatha-yoga-meditation-retreat.jpg?w=770&h=330&fit=crop&auto=format,compress', // REPLACE ME
+      image: 'https://ivhq.imgix.net/images/addons/international-volunteer-hq-tour-travel-add-on-nepal-hatha-yoga-meditation-retreat.jpg?w=770&h=330&fit=crop&auto=format,compress',
     },
     {
       title: 'Social Connections',
       description: 'Strengthen relationships and build meaningful connections with others.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWimyjYM4eAPAQFdfMxsbNbgtl05BxE--vHQ&s', // REPLACE ME
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWimyjYM4eAPAQFdfMxsbNbgtl05BxE--vHQ&s',
     },
     {
       title: 'Creative Expression',
       description: 'Unleash your creativity through art, writing, music, or other hobbies.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxJxzNbWAOMux9f6HMfPi4T-fncJV5zY39Qw&s', // REPLACE ME
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxJxzNbWAOMux9f6HMfPi4T-fncJV5zY39Qw&s',
     },
   ];
 
@@ -45,7 +48,7 @@ const HomeCategory = () => {
             <img src={category.image} alt={category.title} />
             <h3>{category.title}</h3>
             <p>{category.description}</p>
-            <button>Start Now</button>
+            <button onClick={() => navigate('/login')}>Start Now</button> {/* ✅ Navigates to Login */}
           </div>
         ))}
       </div>

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo/logo.png";
-import './Navbar.css'; // Make sure the CSS is imported
+import "./Navbar.css"; // Make sure the CSS is imported
 
 const NavItems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -44,7 +44,11 @@ const NavItems = () => {
             {/* Logo */}
             <div className="logo-search-acte">
               <Link to="/">
-                <img src={logo} alt="Logo" style={{ width: "120px", height: "auto" }} />
+                <img
+                  src={logo}
+                  alt="Logo"
+                  style={{ width: "120px", height: "auto" }}
+                />
               </Link>
             </div>
 
@@ -68,7 +72,7 @@ const NavItems = () => {
               </div>
 
               {/* Sign In */}
-              <Link to="/signin" className="lab-btn me-3 d-none d-md-block">
+              <Link to="/Signup" className="lab-btn me-3 d-none d-md-block">
                 Create Account
               </Link>
 

@@ -1,19 +1,31 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Auth.css"; // Styles for Auth components
+import { Link, useNavigate } from "react-router-dom";
+import "./Auth.css"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Logging in with", email, password);
-    // Add actual login logic here (API call, etc.)
   };
 
   return (
-    <div className="auth-container">
+    <div
+      className="auth-container"
+      style={{
+        backgroundImage: `url("/viber_image_2025-02-22_09-06-56-856.jpg")`, // Direct reference from public folder
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <div className="auth-box">
         <div className="form">
           <h2>Login</h2>
@@ -43,7 +55,11 @@ const Login = () => {
             <button type="submit" className="btn btn-primary">
               Login
             </button>
+            <button className="btn btn-secondary mt-3" onClick={() => navigate("/")}>
+              Go Back to Home
+            </button>
           </form>
+
           <div className="auth-footer">
             Don't have an account? <Link to="/signup">Sign up</Link>
           </div>
