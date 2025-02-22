@@ -1,4 +1,3 @@
-// src/components/NavItems.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo/logo.png";
@@ -52,18 +51,17 @@ const NavItems = () => {
               </Link>
             </div>
 
-            {/* Menu */}
             <div className="menu-area">
               <div className="menu">
                 <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
-                  <li>
-                    <Link to="/">Home</Link>
+                <li>
+                  <Link to="/home">Home</Link>
                   </li>
                   <li>
-                    <Link to="/#">Time Tracker</Link>
+                  <Link to="/hometimetracker">Time Tracker</Link>
                   </li>
                   <li>
-                    <Link to="/#">Mood Tracker</Link>
+                    <Link to="/login">Mood Tracker</Link>
                   </li>
                   <li>
                     <Link to="/#">Tips</Link>

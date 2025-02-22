@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Auth.css"; // Styles for Auth components
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -21,6 +22,12 @@ const Signup = () => {
     });
     // Add actual signup logic here (API call, etc.)
   };
+
+  const handleAddProduct=()=>
+  {
+    console.log(newUser);
+
+  }
 
   return (
     <div className="auth-container">
@@ -106,7 +113,7 @@ const Signup = () => {
               />
             </div>
 
-            <button type="submit" className="btn btn-success">
+            <button type="submit" className="btn btn-success" onClick={handleSubmit}>
               Sign Up
             </button>
 

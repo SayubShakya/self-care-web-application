@@ -76,11 +76,13 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
+        <div className="footer-bottom-front">
         <div className="footer-bottom">
           <p>
             © {new Date().getFullYear()} WeVibe. All rights reserved for
             self-care hackathon.
           </p>
+        </div>
         </div>
       </div>
     </footer>
