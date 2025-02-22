@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import NavItems from "./components/NavItems";
+import Home from "./home/Home";
+import Blog from "./blog/Blog";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation(); // Get current route
+
+  // Routes where Navbar and Footer should be hidden
+  const hideNavbarRoutes = ["/login", "/Signup", "/NavItems"];
+  const hideFooterRoutes = ["/login", "/Signup"];
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* Hide Navbar on login and signup pages */}
+      {!hideNavbarRoutes.includes(location.pathname) && <NavItems />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+
+      {/* Hide Footer on login and signup pages */}
+      {!hideFooterRoutes.includes(location.pathname) && <Footer />}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
