@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <div className="footer">
       <div className="container">
         <div className="footer-content">
           {/* About Section */}
@@ -17,8 +22,13 @@ const Footer = () => {
               you today!
             </p>
             <div className="contact-details">
-              <p>Email: <a href="mailto:WeVibe@selfcare.com">WeVibe@selfcare.com</a></p>
-              <p>Phone: <a href="tel:+9779898878766">(+977) 9898878766</a></p>
+              <p>
+                Email:{" "}
+                <a href="mailto:WeVibe@selfcare.com">WeVibe@selfcare.com</a>
+              </p>
+              <p>
+                Phone: <a href="tel:+9779898878766">(+977) 9898878766</a>
+              </p>
             </div>
           </div>
 
@@ -26,9 +36,15 @@ const Footer = () => {
           <div className="footer-section links">
             <h2>Quick Links</h2>
             <ul>
-              <li><Link to="/time-tracker">Time Tracker</Link></li>
-              <li><Link to="/mood-tracker">Mood Tracker</Link></li>
-              <li><Link to="/tips">Tips</Link></li>
+              <li>
+                <Link to="/time-tracker">Time Tracker</Link>
+              </li>
+              <li>
+                <Link to="/mood-tracker">Mood Tracker</Link>
+              </li>
+              <li>
+                <Link to="/tips">Tips</Link>
+              </li>
             </ul>
           </div>
 
@@ -36,20 +52,31 @@ const Footer = () => {
           <div className="footer-section social">
             <h2>Follow Us</h2>
             <div className="social-links">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaLinkedin /></a>
+              <a href="#">
+                <FaFacebookF />
+              </a>
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaInstagram />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
             </div>
           </div>
         </div>
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} WeVibe. All rights reserved for self-care hackathon.</p>
+          <p>
+            © {new Date().getFullYear()} WeVibe. All rights reserved for
+            self-care hackathon.
+          </p>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

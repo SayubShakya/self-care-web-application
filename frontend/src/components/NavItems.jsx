@@ -54,15 +54,15 @@ const NavItems = () => {
             <div className="menu-area">
               <div className="menu">
                 <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
-                <li>
-                  <Link to="/home">Home</Link>
+                  <li>
+                    <Link to="/home">Home</Link>
                   </li>
                   <li>
-                  <Link to="/hometimetracker">Time Tracker</Link>
+                    <Link to="/hometimetracker">Time Tracker</Link>
                   </li>
                   <li>
-                  <Link to="/moodtracker">Mood Tracker</Link>          
-                          </li>
+                    <Link to="/moodtracker">Mood Tracker</Link>
+                  </li>
                   <li>
                     <Link to="/#">Tips</Link>
                   </li>

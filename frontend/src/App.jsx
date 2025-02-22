@@ -6,10 +6,13 @@ import TimeTracker from "./home/TimeTracker";
 import HomeTimeTracker from "./home/HomeTimeTracker";
 import MoodTracker from "./home/MoodTracker";
 
+import Footer from "./components/Footer";
+
+
 import Blog from "./blog/Blog";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import StudentTT from "./pages/StudentTT";
 
 function App() {
@@ -33,6 +36,8 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/HomeTimeTracker" element={<HomeTimeTracker />} />
         <Route path="/MoodTracker" element={<MoodTracker />} />
+        {/* <Route path="/Footer" element={<Footer />} /> */}
+
 
         {/* <Route path="/TimeTracker" element={<TimeTracker />} /> */}
       </Routes>
