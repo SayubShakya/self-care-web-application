@@ -1,17 +1,18 @@
-/* Footer Styles */
-.footer {
-  width: 1200px; /* Ensure the footer spans the full width */
+.footer-fo {
+  width: 100%;
   background: linear-gradient(135deg, #1a1a1a, #333);
   color: red;
-  padding: 60px 20px; /* Adjust padding as needed */
+  padding: 60px 20px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
 .footer .container {
-  max-width: 100%; /* Ensure the container spans the full width */
-  padding: 0; /* Remove any default padding */
+  max-width: 1200px; /* Keeps content centered while footer is full width */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 20px;
 }
+
 
 .footer-content {
   display: grid;

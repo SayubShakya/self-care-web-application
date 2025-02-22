@@ -10,7 +10,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer-fo">
       <div className="container">
         <div className="footer-content">
           {/* About Section */}

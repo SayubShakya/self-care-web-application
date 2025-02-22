@@ -5,6 +5,8 @@ import Home from "./home/Home";
 import TimeTracker from "./home/TimeTracker";
 import HomeTimeTracker from "./home/HomeTimeTracker";
 import MoodTracker from "./home/MoodTracker";
+import Tips from "./pages/Tips";
+import MoodTrackerAfterL from "./home/Tips";
 
 import Footer from "./components/Footer";
 
@@ -36,6 +38,10 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/HomeTimeTracker" element={<HomeTimeTracker />} />
         <Route path="/MoodTracker" element={<MoodTracker />} />
+        <Route path="/Tips" element={<Tips />} />
+        <Route path="/MoodTrackerAfterL" element={<MoodTrackerAfterL />} />
+
+
         {/* <Route path="/Footer" element={<Footer />} /> */}
 
 
