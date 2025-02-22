@@ -61,8 +61,8 @@ const NavItems = () => {
                   <Link to="/hometimetracker">Time Tracker</Link>
                   </li>
                   <li>
-                    <Link to="/login">Mood Tracker</Link>
-                  </li>
+                  <Link to="/moodtracker">Mood Tracker</Link>          
+                          </li>
                   <li>
                     <Link to="/#">Tips</Link>
                   </li>

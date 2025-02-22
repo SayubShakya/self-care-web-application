@@ -1,33 +1,41 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useUserStore } from "./user"; // Import the global user store
 import "./Auth.css"; // Styles for Auth components
 
 const Signup = () => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
-  const [type, setType] = useState(""); 
+  const [type, setType] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const { createUsers } = useUserStore(); // Destructure the createUsers function from the store
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Signing up with", {
+
+    const newUser = {
       name,
       age,
       type,
       phone,
       address,
       password,
-    });
-    // Add actual signup logic here (API call, etc.)
+    };
+
+    // Call the createUsers function from the global store
+    const { success, message } = await createUsers(newUser);
+
+    if (success) {
+      console.log("User created successfully:", message);
+      // Optionally, redirect the user to another page (e.g., login)
+    } else {
+      console.error("Error creating user:", message);
+      // Optionally, display an error message to the user
+    }
   };
-
-  const handleAddProduct=()=>
-  {
-    console.log(newUser);
-
-  }
 
   return (
     <div className="auth-container">
@@ -69,9 +77,7 @@ const Signup = () => {
               >
                 <option value="">Select Type</option>
                 <option value="Student">Student</option>
-                <option value="Working Professional">
-                  Working Professional
-                </option>
+                <option value="Working Professional">Working Professional</option>
                 <option value="Retired">Retired</option>
                 <option value="Housewife">Housewife</option>
               </select>
@@ -113,11 +119,9 @@ const Signup = () => {
               />
             </div>
 
-            <button type="submit" className="btn btn-success" onClick={handleSubmit}>
+            <button type="submit" className="btn btn-success">
               Sign Up
             </button>
-
-            
           </form>
 
           <div className="auth-footer">

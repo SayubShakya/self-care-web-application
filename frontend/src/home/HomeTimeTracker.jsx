@@ -25,8 +25,8 @@ const TimeTrackerLoginPrompt = () => {
         <div className="features-overview">
           <h2>Why Join Us?</h2>
           <ul>
-            <li>✨ <strong>Personalized Schedules:</strong> Get recommendations based on your lifestyle (Student, Working Professional, Retired, etc.).</li>
-            <li>✨ <strong>Mood Tracking:</strong> Log your daily mood and see how it connects to your activities.</li>
+          <li>✨ <strong>Personalized Schedules:</strong> Get recommendations based on your lifestyle.</li>
+          <li>✨ <strong>Mood Tracking:</strong> Log your daily mood and see how it connects to your activities.</li>
             <li>✨ <strong>AI Insights:</strong> Receive personalized feedback to improve your well-being.</li>
             <li>✨ <strong>Community Support:</strong> Connect with others on a similar journey.</li>
           </ul>
