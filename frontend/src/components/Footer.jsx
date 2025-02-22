@@ -40,9 +40,6 @@ const Footer = () => {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
                 <Link to="/TimeTracker">Time Tracker</Link>
               </li>
               <li>
