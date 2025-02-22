@@ -1,14 +1,15 @@
-/* src/components/Auth.css */
-
-/* General Styles */
 .auth-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f2f5;
-    font-family: sans-serif;
-  }
+  background-image: url("../assets/backgroundd.avif");
+  background-size: cover; /* Ensures the image covers the full screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
   
   .auth-box {
     width: 400px;

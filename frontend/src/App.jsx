@@ -14,14 +14,16 @@ function App() {
 
   return (
     <>
-      <NavItems />
+      {!hideNavbarRoutes.includes(location.pathname) && <NavItems />}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
-      <Footer /> {/* ✅ Moved outside of <Routes> */}
+
+      {!hideFooterRoutes.includes(location.pathname) && <Footer />}
     </>
   );
 }

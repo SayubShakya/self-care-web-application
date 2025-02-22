@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./Auth.css"; 
+import "./Auth.css"; // Keep using your existing CSS
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -13,56 +13,39 @@ const Login = () => {
   };
 
   return (
-    <div
-      className="auth-container"
-      style={{
-        backgroundImage: `url("/viber_image_2025-02-22_09-06-56-856.jpg")`, // Direct reference from public folder
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="auth-container">
       <div className="auth-box">
-        <div className="form">
-          <h2>Login</h2>
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label>Email</label>
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Enter email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label>Password</label>
-              <input
-                type="password"
-                className="form-control"
-                placeholder="Enter password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Login
-            </button>
-            <button className="btn btn-secondary mt-3" onClick={() => navigate("/")}>
-              Go Back to Home
-            </button>
-          </form>
-
-          <div className="auth-footer">
-            Don't have an account? <Link to="/signup">Sign up</Link>
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              className="form-control"
+              placeholder="Enter email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              className="form-control"
+              placeholder="Enter password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          <button type="submit" className="btn btn-primary">Login</button>
+          <button type="button" className="btn btn-success mt-3" onClick={() => navigate("/")}>
+            Go Back to Home
+          </button>
+        </form>
+        <div className="auth-footer">
+          Don't have an account? <Link to="/signup">Sign up</Link>
         </div>
       </div>
     </div>
