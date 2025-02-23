@@ -1,97 +1,99 @@
-/* Tips Container */
 .tips-container {
-    background: linear-gradient(to right, #c5d6e4, #cccccd);
-    max-width: 700px;
-    backdrop-filter: blur(10px);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin: 2rem auto;
+  background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tip-content{
+  background-color: #87ceeb; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.tips-container {
+  background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+  max-width: 700px;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 2rem auto;
+}
+
+/* Big Mood Emoji */
+.mood-emoji {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Mood Description */
+.mood-description {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* Section Styling */
+.section {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  font-size: 1.3rem;
+  color: #357abd;
+  margin-bottom: 1rem;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.section li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.section a {
+  color: #357abd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.section a:hover {
+  color: #245a96;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tips-container {
+    padding: 1.5rem;
   }
-  
-  /* Big Mood Emoji */
+
   .mood-emoji {
-    font-size: 5rem; /* Large emoji */
-    margin-bottom: 1rem;
-    color: #333; /* Darker color for better contrast */
+    font-size: 4rem;
   }
-  
-  /* Mood Tip Text */
-  .mood-tip {
+
+  .mood-description {
+    font-size: 1.3rem;
+  }
+
+  .section h3 {
     font-size: 1.2rem;
-    color: #555; /* Slightly darker text for readability */
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
   }
-  
-  /* Button Container (Optional) */
-  .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
-  }
-  
-  /* CTA Button (Optional) */
-  .cta-button {
-    background-color: #357abd;
-    color: white;
-    padding: 10px 24px;
+
+  .section li {
     font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
   }
-  
-  .cta-button:hover {
-    background-color: #245a96;
-  }
-  
-  /* Footer Styling (Optional) */
-  .footer {
-    background: #357abd;
-    padding: 1rem;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 700px;
-    text-align: center;
-    margin-top: 3rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .footer p {
-    font-size: 0.9rem;
-    margin: 0;
-  }
-  
-  .footer a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .footer a:hover {
-    color: white;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .tips-container {
-      padding: 1.5rem;
-    }
-  
-    .mood-emoji {
-      font-size: 4rem;
-    }
-  
-    .mood-tip {
-      font-size: 1rem;
-    }
-  
-    .cta-button {
-      padding: 8px 20px;
-    }
-  }
+}

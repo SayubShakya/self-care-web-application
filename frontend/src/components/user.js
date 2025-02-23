@@ -5,7 +5,14 @@ export const useUserStore = create((set) => ({
   setUsers: (users) => set({ users }),
 
   createUsers: async (newUser) => {
-    if (!newUser.name || !newUser.age || !newUser.type || !newUser.phone || !newUser.address || !newUser.password) {
+    if (
+      !newUser.name ||
+      !newUser.age ||
+      !newUser.type ||
+      !newUser.phone ||
+      !newUser.address ||
+      !newUser.password
+    ) {
       return { success: false, message: "Please fill in all fields" };
     }
 
@@ -18,13 +25,16 @@ export const useUserStore = create((set) => ({
         body: JSON.stringify(newUser),
       });
 
-      console.log("Response:", res); // Log the response
+      console.log("Response:", res); 
 
       if (!res.ok) {
-        console.log(res)
-        const errorText = await res.text(); // Log the raw response text
+        console.log(res);
+        const errorText = await res.text(); 
         console.error("Server error response:", errorText);
-        return { success: false, message: errorText || "Failed to create user" };
+        return {
+          success: false,
+          message: errorText || "Failed to create user",
+        };
       }
 
       const data = await res.json();
@@ -32,7 +42,10 @@ export const useUserStore = create((set) => ({
       return { success: true, message: "User added successfully" };
     } catch (error) {
       console.error("Error creating user:", error);
-      return { success: false, message: "An error occurred while creating the user" };
+      return {
+        success: false,
+        message: "An error occurred while creating the user",
+      };
     }
   },
 }));

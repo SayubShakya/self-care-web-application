@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #87CEEB; /* Sky Blue */
+  background-color: #87ceeb; /* Sky Blue */
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -36,7 +36,7 @@
 }
 
 .login-button {
-  background-color: #4A90E2; /* Blue */
+  background-color: #4a90e2; /* Blue */
   color: white;
   padding: 8px 16px;
   border: none;
@@ -49,5 +49,5 @@
 }
 
 .login-button:hover {
-  background-color: #357ABD; 
+  background-color: #357abd;
 }

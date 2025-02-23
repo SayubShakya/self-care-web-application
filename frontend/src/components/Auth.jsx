@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Auth.css"; // Make sure the CSS is imported
+import "./Auth.css";
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -12,10 +12,8 @@ const Auth = () => {
     e.preventDefault();
     if (isLogin) {
       console.log("Logging in with", email, password);
-      // Add login logic here
     } else {
       console.log("Signing up with", name, email, password);
-      // Add signup logic here
     }
   };
 
@@ -53,7 +51,11 @@ const Auth = () => {
           </form>
           <div className="auth-footer">
             Don't have an account?
-            <Link to="#" onClick={() => setIsLogin(false)} className="toggle-link">
+            <Link
+              to="#"
+              onClick={() => setIsLogin(false)}
+              className="toggle-link"
+            >
               Sign up
             </Link>
           </div>
@@ -100,7 +102,11 @@ const Auth = () => {
           </form>
           <div className="auth-footer">
             Already have an account?
-            <Link to="#" onClick={() => setIsLogin(true)} className="toggle-link">
+            <Link
+              to="#"
+              onClick={() => setIsLogin(true)}
+              className="toggle-link"
+            >
               Login
             </Link>
           </div>

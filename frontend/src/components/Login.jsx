@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./Auth.css"; // Keep using your existing CSS
+import "./Auth.css"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -39,8 +39,14 @@ const Login = () => {
               required
             />
           </div>
-          <button type="submit" className="btn btn-primary">Login</button>
-          <button type="button" className="btn btn-success mt-3" onClick={() => navigate("/")}>
+          <button type="submit" className="btn btn-primary">
+            Login
+          </button>
+          <button
+            type="button"
+            className="btn btn-success mt-3"
+            onClick={() => navigate("/")}
+          >
             Go Back to Home
           </button>
         </form>

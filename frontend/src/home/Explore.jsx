@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./HomeTimeTracker.css";
 
-const TimeTrackerLoginPrompt = () => {
+const MoodTrackerLoginPrompt = () => {
   const navigate = useNavigate();
 
   const handleLoginClick = () => {
@@ -17,13 +17,12 @@ const TimeTrackerLoginPrompt = () => {
       <br />
       <br />
       <br />
-
       <div className="time-tracker-content">
-        <h1>Track Your Time, Elevate Your Well-being</h1>
+        <h1>Track Your Mood, Elevate Your Well-being</h1>
         <p>
-          To unlock the power of time tracking and create a balanced schedule
-          tailored just for you, please log in or create an account. It’s quick,
-          easy, and the first step toward a happier, healthier you!
+          To unlock the power of mood tracking and understand how your emotions
+          connect to your daily activities, please log in or create an account.
+          It’s quick, easy, and the first step toward a happier, healthier you!
         </p>
         <div className="button-container">
           <button className="cta-button" onClick={handleLoginClick}>
@@ -34,16 +33,16 @@ const TimeTrackerLoginPrompt = () => {
           <h2>Why Join Us?</h2>
           <ul>
             <li>
-              ✨ <strong>Personalized Schedules:</strong> Get recommendations
-              based on your lifestyle.
+              ✨ <strong>Mood Tracking:</strong> Log your daily mood and see
+              patterns over time.
             </li>
             <li>
-              ✨ <strong>Mood Tracking:</strong> Log your daily mood and see how
-              it connects to your activities.
+              ✨ <strong>Personalized Insights:</strong> Understand how your
+              mood connects to your activities.
             </li>
             <li>
-              ✨ <strong>AI Insights:</strong> Receive personalized feedback to
-              improve your well-being.
+              ✨ <strong>AI Feedback:</strong> Receive suggestions to improve
+              your emotional well-being.
             </li>
             <li>
               ✨ <strong>Community Support:</strong> Connect with others on a
@@ -56,4 +55,4 @@ const TimeTrackerLoginPrompt = () => {
   );
 };
 
-export default TimeTrackerLoginPrompt;
+export default MoodTrackerLoginPrompt;

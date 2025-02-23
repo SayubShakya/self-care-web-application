@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo/logo.png";
-import "./Navbar.css"; // Make sure the CSS is imported
+import "./Navbar.css";
 
 const NavItems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -60,13 +60,15 @@ const NavItems = () => {
                   <li>
                     {/* <Link to="/hometimetracker">Time Tracker</Link> */}
                     <Link to="/StudentTT">Time Tracker</Link>
-
                   </li>
                   <li>
-                    <Link to="/moodtracker">Mood Tracker</Link>
+                    <Link to="/MoodDeterminer">Mood Tracker</Link>
                   </li>
                   <li>
                     <Link to="/Tips">Tips</Link>
+                  </li>
+                  <li>
+                    <Link to="/Explore">Explore</Link>
                   </li>
                 </ul>
               </div>

@@ -13,15 +13,14 @@
   padding: 0 20px;
 }
 
-
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   text-align: left;
-  max-width: 1200px; /* Optional: Limit the content width */
-  margin: 0 auto; /* Center the content */
-  padding: 0 20px; /* Add padding for smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-section h2 {
@@ -65,7 +64,6 @@
   text-decoration: underline;
 }
 
-/* Social Icons */
 .social-links {
   display: flex;
   gap: 15px;

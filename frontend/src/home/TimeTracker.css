@@ -1,122 +1,175 @@
 /* Styles for the login prompt */
 .time-tracker-login-prompt {
-    background-image: url('path-to-your-background-image.jpg'); /* Add a calming background image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white; /* Light text for contrast */
-    padding: 0 20px; /* Add padding for smaller screens */
-  }
-  
-  .time-tracker-content {
-    max-width: 600px; /* Limit content width for better readability */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text readability */
-    padding: 2rem;
-    border-radius: 10px;
-  }
-  
-  .time-tracker-content h1 {
-    font-size: 2.5rem; /* Large, attention-grabbing heading */
-    margin-bottom: 1rem; /* Space below the heading */
-  }
-  
-  .time-tracker-content p {
-    font-size: 1.2rem; /* Slightly larger text for readability */
-    margin-bottom: 2rem; /* Space below the paragraph */
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .cta-button {
-    background-color: #007bff; /* Bright, inviting button color */
-    color: white;
-    border: none;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  /* Styles for the Time Tracker page (after login) */
-  .time-tracker {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .time-tracker h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .time-tracker p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .time-log, .mood-tracker, .ideal-schedule {
-    margin-bottom: 2rem;
-  }
-  
-  .time-log h2, .mood-tracker h2, .ideal-schedule h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .time-log select, .time-log input {
-    padding: 0.5rem;
-    margin-right: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .time-log button, .mood-tracker button, .ideal-schedule button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .time-log button:hover, .mood-tracker button:hover, .ideal-schedule button:hover {
-    background-color: #0056b3;
-  }
-  
-  .mood-options {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-  
-  .mood-options button {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .ideal-schedule ul {
-    text-align: left;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .ideal-schedule ul li {
-    margin-bottom: 0.5rem;
-  }
+  background-image: url('path-to-your-background-image.jpg'); /* Add a calming background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Light text for contrast */
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+
+
+
+.time-tracker-content {
+  max-width: 600px; /* Limit content width for better readability */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text readability */
+  padding: 2rem;
+  border-radius: 15px; /* More rounded corners */
+}
+
+.time-tracker-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.time-tracker-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the Time Tracker page (after login) */
+.time-tracker {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.time-tracker h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.time-tracker p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.time-log, .mood-tracker, .ideal-schedule {
+  margin-bottom: 2rem;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 15px; /* Rounded corners for boxes */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.time-log h2, .mood-tracker h2, .ideal-schedule h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.time-log select, .time-log input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.time-log button, .mood-tracker button, .ideal-schedule button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.time-log button:hover, .mood-tracker button:hover, .ideal-schedule button:hover {
+  background-color: #0056b3;
+}
+
+.mood-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.mood-options button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ideal-schedule ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+}
+
+.ideal-schedule ul li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Rounded corners for tables */
+table {
+  width: 100%;
+  border-collapse: separate; /* Allows border-radius to work */
+  border-spacing: 0; /* Ensures no gaps */
+  border-radius: 10px; /* Rounded table corners */
+  overflow: hidden; /* Ensures border-radius applies */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+  background: #fff;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table td {
+  border-radius: 5px; /* Slight rounding for cells */
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}

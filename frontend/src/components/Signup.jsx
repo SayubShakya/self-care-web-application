@@ -77,7 +77,9 @@ const Signup = () => {
               >
                 <option value="">Select Type</option>
                 <option value="Student">Student</option>
-                <option value="Working Professional">Working Professional</option>
+                <option value="Working Professional">
+                  Working Professional
+                </option>
                 <option value="Retired">Retired</option>
                 <option value="Housewife">Housewife</option>
               </select>

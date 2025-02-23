@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import Tips from './Tips';
+import React, { useState } from "react";
+import Tips from "./Tips";
 
 const MoodTracker = () => {
-  const [mood, setMood] = useState('happy'); // Default mood
+  const [mood, setMood] = useState("happy");
 
   return (
     <div>
+            <div className="tip-content">
+
       <h1>Mood Tracker</h1>
       <select value={mood} onChange={(e) => setMood(e.target.value)}>
         <option value="happy">😊 Happy</option>
@@ -30,6 +32,7 @@ const MoodTracker = () => {
         <option value="playful">😜 Playful</option>
       </select>
       <Tips mood={mood} />
+    </div>
     </div>
   );
 };

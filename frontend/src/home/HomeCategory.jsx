@@ -1,9 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import "./HomeCategory.css"; // Link to the CSS file
-
+import { useNavigate } from "react-router-dom";
+import "./HomeCategory.css";
 const HomeCategory = () => {
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
 
   const categories = [
     {

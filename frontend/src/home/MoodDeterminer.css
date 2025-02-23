@@ -1,0 +1,127 @@
+/* src/pages/MoodDeterminer.css */
+
+.mood-determiner {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mood-determiner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.question {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.question label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.question input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.mood-determiner button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.mood-determiner button:hover {
+  background-color: #0056b3;
+}
+
+.mood-result {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #cddbde;
+  color: black;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mood-table {
+  width: 100%;
+  background-color: #cddbde;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.mood-table th,
+.mood-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.mood-table th {
+  background-color: #b3c0d5;
+  color: black;
+}
+
+.mood-table input[type="text"],
+.mood-table textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.mood-table textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.mood-table button {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.mood-table button:hover {
+  background-color: #c82333;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}

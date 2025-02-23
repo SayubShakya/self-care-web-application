@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../components/Banner.css"; // Ensure the CSS file is linked
+import "../components/Banner.css";
 
 const Banner = () => {
-  const navigate = useNavigate(); // Hook to navigate between pages
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/login"); // Redirect to the login page
+    navigate("/login");
   };
 
   return (

@@ -73,7 +73,6 @@
   margin-bottom: 0.5rem;
 }
 
-/* Footer Styling */
 .footer {
   background: #357abd;
   padding: 1rem;
@@ -101,7 +100,6 @@
   color: white;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .time-tracker-content h1 {
     font-size: 2rem;
