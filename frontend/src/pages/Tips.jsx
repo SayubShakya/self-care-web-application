@@ -1,6 +1,8 @@
 import React from "react";
 import "./Tips.css";
 
+
+
 const moodData = {
   happy: {
     emoji: "😊",
@@ -471,6 +473,9 @@ const Tips = () => {
 
   return (
     <>
+    
+      <div className="tips-container-bg">
+            
       <br />
       <br />
       <br />
@@ -520,6 +525,8 @@ const Tips = () => {
           </ul>
         </div>
       </div>
+      </div>
+
     </>
   );
 };

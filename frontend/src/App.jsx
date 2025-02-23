@@ -16,6 +16,8 @@ import Signup from "./components/Signup";
 // import Footer from "./components/Footer";
 import StudentTT from "./pages/StudentTT";
 
+import CategoryDetail from "./components/CategoryDetail"; // Import the CategoryDetail component
+
 function App() {
   const location = useLocation();
   const hideNavbarRoutes = ["/login", "/signup"];
@@ -41,6 +43,8 @@ function App() {
         <Route path="/MoodDeterminer" element={<MoodDeterminer />} />
 
         <Route path="/MoodTrackerAfterL" element={<MoodTrackerAfterL />} />
+        <Route path="/CategoryDetail" element={<CategoryDetail />} /> 
+        
 
         {/* <Route path="/Footer" element={<Footer />} /> */}
 

@@ -6,8 +6,7 @@ const MoodTracker = () => {
 
   return (
     <div>
-            <div className="tip-content">
-
+      
       <h1>Mood Tracker</h1>
       <select value={mood} onChange={(e) => setMood(e.target.value)}>
         <option value="happy">😊 Happy</option>
@@ -32,7 +31,6 @@ const MoodTracker = () => {
         <option value="playful">😜 Playful</option>
       </select>
       <Tips mood={mood} />
-    </div>
     </div>
   );
 };
