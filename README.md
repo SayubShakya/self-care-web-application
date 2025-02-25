@@ -24,3 +24,6 @@ This project focuses on self-care by providing users with essential tools to tra
    npm install
    cd frontend
    npm run dev
+
+   ![image](https://github.com/user-attachments/assets/3e994efc-dcb4-4b46-9668-f15e07cead15)
+
