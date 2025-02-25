@@ -18,6 +18,12 @@ This project focuses on self-care by providing users with essential tools to tra
 - 🎨 **Modern UI** – A clean, interactive, and user-friendly design.
 
 - ![Screenshot 2025-02-25 175827](https://github.com/user-attachments/assets/c4b9fd1b-5b4f-4cb0-9195-d838786f71d2)
+- ![image](https://github.com/user-attachments/assets/44042c32-0204-482d-bb42-22d994956187)
+- ![image](https://github.com/user-attachments/assets/77421d76-4586-465b-b30a-90d3fb028e85)
+- ![image](https://github.com/user-attachments/assets/b0a2711e-a4cc-4d82-be1e-e99dbde4079c)
+
+
+
 
 
 ## 📦 Installation & Setup
