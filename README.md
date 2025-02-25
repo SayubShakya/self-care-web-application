@@ -17,6 +17,9 @@ This project focuses on self-care by providing users with essential tools to tra
 - 🔔 **Reminders & Notifications** – Stay on track with self-care goals.
 - 🎨 **Modern UI** – A clean, interactive, and user-friendly design.
 
+- ![Screenshot 2025-02-25 175827](https://github.com/user-attachments/assets/c4b9fd1b-5b4f-4cb0-9195-d838786f71d2)
+
+
 ## 📦 Installation & Setup
 1. Clone the repository:
    ```sh
@@ -24,6 +27,8 @@ This project focuses on self-care by providing users with essential tools to tra
    npm install
    cd frontend
    npm run dev
+   
 
-   ![image](https://github.com/user-attachments/assets/3e994efc-dcb4-4b46-9668-f15e07cead15)
+
+
 
